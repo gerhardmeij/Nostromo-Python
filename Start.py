@@ -69,4 +69,31 @@ time.sleep(0.8)
 
 #Format codes - see notes
 
+###Arithmetic Operations
+#Multiplication
+remainingTravelMonths = 7
+remainingTravelDays = 14
+
+totalTravelDaysLeft = remainingTravelMonths * 31 + remainingTravelDays
+#Division
+# / = To get real division result. Will convert to integer if both division values are integers.
+# // = Throws away the remainder of the division.
+remainingFoodSuppliesKg = 9000.00
+print("Food suppllies: ")
+print("Remaining Food Supplies: ",remainingFoodSuppliesKg)
+remainingFoodPerDay = remainingFoodSuppliesKg / totalTravelDaysLeft
+print("Remaining food per day: %.2f Kg" %remainingFoodPerDay) #.2f to the second decimal, change the number 2 to increase/ecrease precision.
+remainingFoodPerCrewPerDay = remainingFoodPerDay // 5
+print("Remaining food per crew member per day: ",remainingFoodPerCrewPerDay, " kg")
+
+
+###Exponents
+exponentialExample = 50**90
+print("Exponential1: ", exponentialExample)
+exponentialExample2 = pow(60,80)
+print("Exponential2: ", exponentialExample2)
+
+###Assignment statements
+
+
 
